@@ -41,3 +41,22 @@ while (num >=0) {
            num--;
     }
  
+/*
+ * Programming Quiz: Countdown, Liftoff! (4-3)
+ * 
+ * Using a while loop, print out the countdown output above.
+ */
+var time = 60;
+while(time >=0){
+var prefix = 'T-' + time + ' seconds';
+var message = "";
+var countDown = "";
+countDown = message = time === 50 ? 'Orbiter transfers from ground to internal power': // countdown is defined, so if equals the time, prints out full statement
+time === 31 ? 'Ground launch sequencer is go for auto sequence start' :
+time === 16 ? 'Activate launch pad sound suppression system' :
+time === 10 ? 'Activate main engine hydrogen burnoff system' :
+time === 6 ? 'Main engine start' :
+time === 0 ? 'Solid rocket booster ignition and liftoff!' : prefix;
+console.log(countDown);
+time --;
+}
